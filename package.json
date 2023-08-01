@@ -1,8 +1,6 @@
 {
     "name": "game-indexer",
     "version": "1.0.0",
-    "license": "GPL-3.0",
-    "description": "Visualize your League of Legends data",
     "keywords": [],
     "repository": {
         "type": "git",

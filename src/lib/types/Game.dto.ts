@@ -1,5 +1,5 @@
 export interface GameDto {
-    name: string
+    name: string // unique key
     gameDuration: number
     maxPlayers: number
     lastTimePlayed: string
@@ -9,6 +9,6 @@ export interface GameDto {
 }
 
 export interface OwnerDto {
-    name: string
-    games: Array<GameDto>
+    name: string // unique key
+    games: Array<string> // GameDto.name
 }
