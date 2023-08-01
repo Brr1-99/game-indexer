@@ -1,11 +1,10 @@
 export interface GameDto {
     name: string // unique key
     gameDuration: number
+    minPlayers: number
     maxPlayers: number
-    lastTimePlayed: string
+    lastTimePlayed: number
     rating: number
-    price: number
-    owner: string
 }
 
 export interface OwnerDto {

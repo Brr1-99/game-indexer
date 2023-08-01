@@ -1,38 +1,22 @@
 <script lang="ts">
-    import { onMount } from 'svelte'
-    import { DatabaseService } from '$lib/services/DatabaseService'
-    import { PUBLIC_REDIS_TOKEN } from '$env/static/public'
-    import type { GameDto, OwnerDto } from '$lib/types'
     import { Button, ModalGame } from '$lib/components'
+    import { gamesContext, modalContext, modalTypeContext, ownersContext } from '$lib/context/general'
 
-    const databaseService = new DatabaseService(PUBLIC_REDIS_TOKEN)
-    const data: {
-        owners: Array<OwnerDto>
-        games: Array<GameDto>
-    } = {
-        owners: [],
-        games: [],
-    }
-
-    // Get current state of owners and games
-    onMount(async () => {
-        data.owners = await databaseService.getOwners()
-        data.games = await databaseService.getGames()
-    })
+    // ------------------ Data ------------------
+    export let data
+    ownersContext.set(data.owners)
+    gamesContext.set(data.games)
 
     // ------------------ Button functions ------------------
-    async function createUser() {
-        // TODO: pop the modal to create a new owner
-        const owner_names_pool = ['David', 'John', 'Michael', 'Robert', 'James', 'William', 'Mary']
-        const res = await databaseService.setOwner({
-            name: owner_names_pool[Math.floor(Math.random() * owner_names_pool.length)],
-            games: [],
-        })
-        // reload data.owners
-        data.owners = await databaseService.getOwners()
+    async function createOwner() {
+        modalTypeContext.set('owner')
+        modalContext.set(!$modalContext)
     }
 
-    async function createGame() {}
+    async function createGame() {
+        modalTypeContext.set('game')
+        modalContext.set(!$modalContext)
+    }
 </script>
 
 <ModalGame />
@@ -42,12 +26,12 @@
     <h2 class="text-2xl font-bold">Owners</h2>
     <hr />
 
-    <Button onClick={createUser}>
+    <Button onClick={createOwner}>
         <i class="bi bi-person-fill-add" /> Add
     </Button>
 
     <div class="mt-4 grid grid-cols-2 gap-4">
-        {#each data.owners as owner}
+        {#each $ownersContext as owner}
             <div class="rounded bg-zinc-700 p-2">
                 <p class="pb-4">
                     <i class="bi bi-person-fill" />
@@ -72,7 +56,7 @@
     </Button>
 
     <div class="mt-4 grid grid-cols-2 gap-4">
-        {#each data.games as game}
+        {#each $gamesContext as game}
             <div class="rounded bg-zinc-700 p-2">
                 <p class="pb-4">
                     <i class="bi bi-person-fill" />
