@@ -16,22 +16,16 @@ export class DatabaseService {
     /**
      * Util function to fetch data from Redis
      *  - Handles errors
-     *  - Logs requests
      *  - Encapsulates the response in a { result: T }
      * @param url URL to fetch from
      * @param parse Whether to parse the response as JSON
      * @returns Data from the Riot API
      */
     private async httpGet<T>(url: string, parse = false): Promise<T> {
-        try {
-            console.log(`Fetching ${url}`)
-            const res = await fetch(url, this.headers)
-            const data = await res.json()
-            return parse ? JSON.parse(data.result) : data.result
-        } catch (error) {
-            console.error(`Fetching ${url}`, error)
-            throw error
-        }
+        // console.log(`Fetching ${url}`)
+        const res = await fetch(url, this.headers)
+        const data = await res.json()
+        return parse ? JSON.parse(data.result) : data.result
     }
 
     // ------------------ Methods ------------------
