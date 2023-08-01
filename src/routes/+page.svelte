@@ -1,49 +1,84 @@
 <script lang="ts">
-    import Button from '$lib/components/Button.svelte'
+    import { onMount } from 'svelte'
     import { DatabaseService } from '$lib/services/DatabaseService'
     import { PUBLIC_REDIS_TOKEN } from '$env/static/public'
-
-    let name = 'David'
-    let screen = ''
+    import type { GameDto, OwnerDto } from '$lib/types'
+    import { Button, ModalGame } from '$lib/components'
 
     const databaseService = new DatabaseService(PUBLIC_REDIS_TOKEN)
-
-    const handle = () => {
-        console.log('clicked')
-        databaseService.getKeys().then(res => {
-            console.log(res)
-        })
+    const data: {
+        owners: Array<OwnerDto>
+        games: Array<GameDto>
+    } = {
+        owners: [],
+        games: [],
     }
 
-    async function createRandomOwner() {
-        const owner_names_pool = [
-            'David',
-            'John',
-            'Michael',
-            'Robert',
-            'James',
-            'William',
-            'Mary',
-        ]
+    // Get current state of owners and games
+    onMount(async () => {
+        data.owners = await databaseService.getOwners()
+        data.games = await databaseService.getGames()
+    })
+
+    // ------------------ Button functions ------------------
+    async function createUser() {
+        // TODO: pop the modal to create a new owner
+        const owner_names_pool = ['David', 'John', 'Michael', 'Robert', 'James', 'William', 'Mary']
         const res = await databaseService.setOwner({
             name: owner_names_pool[Math.floor(Math.random() * owner_names_pool.length)],
             games: [],
         })
-        console.log(res)
+        // reload data.owners
+        data.owners = await databaseService.getOwners()
     }
+
+    async function createGame() {}
 </script>
 
-<div class="container mx-auto w-96 bg-zinc-800 py-20">
-    <h1 class="text-2xl font-bold">Game Indexer</h1>
+<ModalGame />
+
+<!-- OWNERS -->
+<section class="mx-auto w-96 bg-zinc-800 p-8">
+    <h2 class="text-2xl font-bold">Owners</h2>
     <hr />
 
-    <Button onClick={handle}>getKeys</Button>
+    <Button onClick={createUser}>
+        <i class="bi bi-person-fill-add" /> Add
+    </Button>
 
-    <input type="text" class="rounded bg-zinc-700" bind:value={name} />
+    <div class="mt-4 grid grid-cols-2 gap-4">
+        {#each data.owners as owner}
+            <div class="rounded bg-zinc-700 p-2">
+                <p class="pb-4">
+                    <i class="bi bi-person-fill" />
+                    {owner.name}
+                </p>
+                <p class="text-center">games: {owner.games.length}</p>
+            </div>
+        {/each}
+    </div>
+</section>
 
-    <Button onClick={() => (screen = Math.random().toString())}>set screen random val</Button>
+<br />
+<br />
+<br />
 
-    screen: {screen}
+<!-- GAMES -->
+<section class="mx-auto w-96 bg-zinc-800 p-8">
+    <h2 class="text-2xl font-bold">Games</h2>
+    <hr />
+    <Button onClick={createGame}>
+        <i class="bi bi-person-fill-add" /> Add
+    </Button>
 
-    <Button onClick={createRandomOwner}>create random owner</Button>
-</div>
+    <div class="mt-4 grid grid-cols-2 gap-4">
+        {#each data.games as game}
+            <div class="rounded bg-zinc-700 p-2">
+                <p class="pb-4">
+                    <i class="bi bi-person-fill" />
+                    {game.name}
+                </p>
+            </div>
+        {/each}
+    </div>
+</section>
