@@ -1,11 +1,6 @@
-<!--
-  @component
-  ## ModalGame
-  used to display a game inside a modal
--->
 <script lang="ts">
-    import type { GameDto } from '$lib/types'
-    import { modalGameContext } from '$lib/context/general'
+    import { modalContext, modalTypeContext } from '$lib/context/general'
+    import { GameForm, OwnerForm } from '.'
 
     const modal = {
         // Element.showModal() is still not noted in TS lib definitions
@@ -21,33 +16,29 @@
 
     // This memo the state to prevent multiple calls
     let isModalOpen = false
-    let game: GameDto
-    $: modalGameContext.subscribe(val => {
-        game = val.game
-
+    $: modalContext.subscribe(val => {
         // Skip re-render if the value is the same
-        if (val.isModalOpen === isModalOpen) return
+        if (val === isModalOpen) return
 
         // Update the memo and run the logic
-        isModalOpen = val.isModalOpen
-        val.isModalOpen ? modal.open() : modal.close()
+        isModalOpen = val
+        val ? modal.open() : modal.close()
     })
 </script>
 
-<dialog data-modal-game class="relative rounded bg-zinc-900 p-2 text-white shadow-lg shadow-zinc-700">
-    <div class="relative flex justify-between bg-zinc-900 p-1">
-        <h2 class="text-lg font-bold">title</h2>
-        <button
-            class="h-6 w-6 border border-zinc-500 bg-zinc-700 text-white hover:border-red-500 hover:bg-red-500"
-            on:click={() =>
-                modalGameContext.update(val => ({
-                    ...val,
-                    isModalOpen: false,
-                }))}
-        >
-            <i class="bi bi-x-lg" />
-        </button>
-    </div>
+<dialog data-modal-game class="relative bg-zinc-900 p-4 text-white shadow-lg shadow-zinc-700">
+    {#if $modalTypeContext === 'game'}
+        <GameForm />
+    {:else}
+        <OwnerForm />
+    {/if}
+
+    <button
+        class="absolute top-4 right-4 h-6 w-6 border border-zinc-500 bg-zinc-700 text-white hover:border-red-500 hover:bg-red-500"
+        on:click={() => modalContext.set(false)}
+    >
+        <i class="bi bi-x-lg" />
+    </button>
 </dialog>
 
 <style>
