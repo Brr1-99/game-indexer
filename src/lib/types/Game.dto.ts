@@ -9,5 +9,6 @@ export interface GameDto {
 
 export interface OwnerDto {
     name: string // unique key
+    imageUrl: string
     games: Array<string> // GameDto.name
 }

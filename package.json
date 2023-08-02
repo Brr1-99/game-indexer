@@ -40,6 +40,7 @@
         "vite": "4.0.4"
     },
     "dependencies": {
+        "@faker-js/faker": "^8.0.2",
         "@fontsource/fira-mono": "4.5.10",
         "cookie": "0.5.0",
         "web-vitals": "3.1.1"

@@ -1,6 +1,10 @@
 <script lang="ts">
-    import { Button, ModalGame } from '$lib/components'
+    import { PUBLIC_REDIS_TOKEN } from '$env/static/public'
+    import { Button, GameCard, ModalGame, OwnerCard } from '$lib/components'
     import { gamesContext, modalContext, modalTypeContext, ownersContext } from '$lib/context/general'
+    import { DatabaseService } from '$lib/services/DatabaseService.js'
+    
+    const databaseService = new DatabaseService(PUBLIC_REDIS_TOKEN)
 
     // ------------------ Data ------------------
     export let data
@@ -17,7 +21,20 @@
         modalTypeContext.set('game')
         modalContext.set(!$modalContext)
     }
+
+    async function reset() {
+        await databaseService.reset()
+        const owners = await databaseService.getOwners()
+        const games = await databaseService.getGames()
+        ownersContext.set(owners)
+        gamesContext.set(games)
+    }
+
 </script>
+
+<Button onClick={reset}>
+    reset DB
+</Button>
 
 <ModalGame />
 
@@ -32,13 +49,7 @@
 
     <div class="mt-4 grid grid-cols-2 gap-4">
         {#each $ownersContext as owner}
-            <div class="rounded bg-zinc-700 p-2">
-                <p class="pb-4">
-                    <i class="bi bi-person-fill" />
-                    {owner.name}
-                </p>
-                <p class="text-center">games: {owner.games.length}</p>
-            </div>
+            <OwnerCard {owner} />
         {/each}
     </div>
 </section>
@@ -51,18 +62,14 @@
 <section class="mx-auto w-96 bg-zinc-800 p-8">
     <h2 class="text-2xl font-bold">Games</h2>
     <hr />
+
     <Button onClick={createGame}>
         <i class="bi bi-person-fill-add" /> Add
     </Button>
 
     <div class="mt-4 grid grid-cols-2 gap-4">
         {#each $gamesContext as game}
-            <div class="rounded bg-zinc-700 p-2">
-                <p class="pb-4">
-                    <i class="bi bi-person-fill" />
-                    {game.name}
-                </p>
-            </div>
+            <GameCard {game} />
         {/each}
     </div>
 </section>
