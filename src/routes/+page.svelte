@@ -32,9 +32,10 @@
 
 </script>
 
-<Button onClick={reset}>
+<!-- ONLY IF NEEDED -->
+<!-- <Button onClick={reset}>
     reset DB
-</Button>
+</Button> -->
 
 <ModalGame />
 

@@ -2,8 +2,8 @@
     import type { GameDto } from '$lib/types'
     import { PUBLIC_REDIS_TOKEN } from '$env/static/public'
     import { DatabaseService } from '$lib/services/DatabaseService'
-    import Button from './Button.svelte'
     import { gamesContext, modalContext } from '$lib/context/general'
+    import { Button } from '..'
 
     const databaseService = new DatabaseService(PUBLIC_REDIS_TOKEN)
     const new_game: GameDto = {
@@ -33,7 +33,7 @@
 </script>
 
 <div class="">
-    <h2 class="mr-16 text-2xl font-bold">Register new game</h2>
+    <h2 class="mr-16 text-2xl font-bold">Register a new game</h2>
     <hr class="my-4 w-4/5" />
 
     <div class="flex flex-col gap-2">

@@ -3,8 +3,8 @@
     import type { OwnerDto } from '$lib/types'
     import { PUBLIC_REDIS_TOKEN } from '$env/static/public'
     import { DatabaseService } from '$lib/services/DatabaseService'
-    import Button from './Button.svelte'
     import { modalContext, ownersContext } from '$lib/context/general'
+    import { Button } from '..'
 
     const databaseService = new DatabaseService(PUBLIC_REDIS_TOKEN)
     const new_game: OwnerDto = {
