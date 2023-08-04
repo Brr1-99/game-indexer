@@ -6,11 +6,6 @@
 
     const databaseService = new DatabaseService(PUBLIC_REDIS_TOKEN)
 
-    // ------------------ Data ------------------
-    export let data
-    ownersContext.set(data.owners)
-    gamesContext.set(data.games)
-
     // ------------------ Button functions ------------------
     async function createOwner() {
         modalTypeContext.set('create-owner')
