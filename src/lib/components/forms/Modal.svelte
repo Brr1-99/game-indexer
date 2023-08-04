@@ -1,6 +1,7 @@
 <script lang="ts">
     import { modalContext, modalTypeContext } from '$lib/context/general'
     import { GameForm, LinkGamesForm, OwnerForm } from '..'
+    import GameFormEdit from './GameFormEdit.svelte'
 
     const modal = {
         // Element.showModal() is still not noted in TS lib definitions
@@ -27,9 +28,11 @@
 </script>
 
 <dialog data-modal-game class="relative bg-zinc-900 p-4 text-white shadow-lg shadow-zinc-700">
-    {#if $modalTypeContext === 'game'}
+    {#if $modalTypeContext === 'create-game'}
         <GameForm />
-    {:else if $modalTypeContext === 'owner'}
+    {:else if $modalTypeContext === 'edit-game'}
+        <GameFormEdit />
+    {:else if $modalTypeContext === 'create-owner'}
         <OwnerForm />
     {:else if $modalTypeContext === 'link-games'}
         <LinkGamesForm />
