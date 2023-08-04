@@ -8,11 +8,10 @@
     const databaseService = new DatabaseService(PUBLIC_REDIS_TOKEN)
     const new_game: GameDto = {
         name: '',
+        imageUrl: '',
         gameDuration: 0,
         minPlayers: 0,
         maxPlayers: 0,
-        lastTimePlayed: new Date().getTime(),
-        rating: 0,
     }
 
     async function createGame() {
@@ -54,6 +53,9 @@
                 <input class="mb-2 bg-zinc-700 p-1" type="number" id="maxPlayers" min="1" bind:value={new_game.maxPlayers} placeholder="Max players" />
             </div>
         </div>
+
+        <label for="name">Image URL:</label>
+        <input class="mb-2 bg-zinc-700 p-1" type="text" id="name" bind:value={new_game.imageUrl} placeholder="https://public-url.png" />
     </div>
 
     <Button onClick={createGame}>Confirm</Button>
