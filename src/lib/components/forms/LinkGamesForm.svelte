@@ -11,11 +11,11 @@
         const owner: OwnerDto = JSON.parse(JSON.stringify($selectedOwnerContext))
 
         // If its present -> remove it
-        if (owner.games.includes(new_game)) {
-            owner.games = owner.games.filter((game) => game !== new_game)
+        if (owner.gamesOwned.includes(new_game)) {
+            owner.gamesOwned = owner.gamesOwned.filter((game) => game !== new_game)
         } else {
             // Add it
-            owner.games.push(new_game)
+            owner.gamesOwned.push(new_game)
         }
         
         // Update it in Redis
@@ -42,7 +42,7 @@
         {#each $gamesContext as game}
             <button
                 on:click={() => gameClicked(game.name)}
-                class="bg-zinc-700 py-1 px-2 border {$selectedOwnerContext?.games.includes(game.name) ? 'border-green-400' : 'border-red-400'}">
+                class="bg-zinc-700 py-1 px-2 border {$selectedOwnerContext?.gamesOwned.includes(game.name) ? 'border-green-400' : 'border-red-400'}">
                 <p>{game.name}</p>
                 <p><i class="bi bi-clock-fill"></i> {game.gameDuration} mins</p>
                 <p><i class="bi bi-people-fill"></i> {game.minPlayers} - {game.maxPlayers}</p>
