@@ -53,15 +53,25 @@
             owner.gamesPlayed[gameName].lastTimePlayed = Date.now()
         }
     }
+
+    async function changePhoto(): Promise<void> {
+        let imageUrl = prompt('Do you want to change your profile picture? Place the URL here', owner.imageUrl)
+
+        // cancelled
+        if (imageUrl === null) return
+
+        owner.imageUrl = imageUrl
+        await databaseService.setOwner(owner)
+    }
 </script>
 
 <ModalGame />
 
 <div class="mx-auto w-96 rounded bg-zinc-800 p-4">
     <div class="relative flex gap-2">
-        <div class="h-12 w-12">
+        <button on:click={changePhoto} class="h-12 w-12">
             <Image src={String(owner?.imageUrl)} />
-        </div>
+        </button>
         <div class="flex flex-col items-start">
             <span class="text-xl">{owner?.name}</span>
             <span title="Games in property"><i class="bi bi-joystick" /> {owner?.gamesOwned.length}</span>
