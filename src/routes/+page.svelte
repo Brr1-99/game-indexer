@@ -1,68 +1,68 @@
 <script lang="ts">
-    import { PUBLIC_REDIS_TOKEN } from '$env/static/public'
-    import { Button, GameCard, ModalGame, OwnerCard } from '$lib/components'
-    import { gamesContext, modalContext, modalTypeContext, ownersContext } from '$lib/context/general'
-    import { DatabaseService } from '$lib/services/DatabaseService.js'
+    import { Image } from '$lib/components'
+    import GameCard from '$lib/components/GameCard.svelte'
+    import { gamesContext, ownersContext } from '$lib/context/general'
+    import type { GameDto, OwnerDto } from '$lib/types'
 
-    const databaseService = new DatabaseService(PUBLIC_REDIS_TOKEN)
+    $: peopleComing = ['David', 'Alex'] as string[]
 
-    // ------------------ Button functions ------------------
-    async function createOwner() {
-        modalTypeContext.set('create-owner')
-        modalContext.set(!$modalContext)
+    function handleOwnerClick(owner: OwnerDto): void {
+        peopleComing = peopleComing.includes(owner.name)
+            ? peopleComing.filter(name => name !== owner.name) // remove it
+            : [...peopleComing, owner.name] // add it
     }
 
-    async function createGame() {
-        modalTypeContext.set('create-game')
-        modalContext.set(!$modalContext)
-    }
+    // ------------------ Filters ------------------
 
-    async function reset() {
-        await databaseService.reset()
-        const owners = await databaseService.getOwners()
-        const games = await databaseService.getGames()
-        ownersContext.set(owners)
-        gamesContext.set(games)
+    const filterByOwnersComing = (game: GameDto, peopleComing: Array<string>) =>
+        $ownersContext
+            .filter(owner => peopleComing.includes(owner.name)) // only owners coming
+            .some(owner => owner.gamesOwned.includes(game.name)) // only games owned by owners coming
+
+    const filterByMinMaxPlayers = (game: GameDto) => game.minPlayers <= peopleComing.length && game.maxPlayers >= peopleComing.length
+
+    $: lists = {
+        all: $gamesContext,
+        ownersComing: $gamesContext.filter(game => filterByOwnersComing(game, peopleComing)),
+        suitableForPlayers: $gamesContext.filter(game => filterByOwnersComing(game, peopleComing)).filter(filterByMinMaxPlayers)
     }
 </script>
 
-<!-- ONLY IF NEEDED -->
-<!-- <Button onClick={reset}>
-    reset DB
-</Button> -->
+<h1 class="mb-8 text-center text-2xl font-bold">Select the people who comes to play today</h1>
 
-<ModalGame />
-
-<div class="container mx-auto grid lg:grid-cols-2 gap-8">
-    <!-- OWNERS -->
-    <section class="bg-zinc-800 p-8">
-        <h2 class="text-2xl font-bold">Owners</h2>
-        <hr />
-
-        <Button onClick={createOwner}>
-            <i class="bi bi-person-fill-add" /> Add
-        </Button>
-
-        <div class="mt-4 grid grid-cols-2 gap-4">
-            {#each $ownersContext as owner}
-                <OwnerCard {owner} />
-            {/each}
-        </div>
-    </section>
-
-    <!-- GAMES -->
-    <section class="bg-zinc-800 p-8">
-        <h2 class="text-2xl font-bold">Games</h2>
-        <hr />
-
-        <Button onClick={createGame}>
-            <i class="bi bi-person-fill-add" /> Add
-        </Button>
-
-        <div class="mt-4 grid grid-cols-2 xl:grid-cols-3 gap-4">
-            {#each $gamesContext.sort((a, b) => a.name.localeCompare(b.name)) as game}
-                <GameCard {game} />
-            {/each}
-        </div>
-    </section>
+<div class="container mx-auto mb-24 grid gap-2 lg:gap-4 grid-cols-2 sm:grid-cols-3 md:grid-4 lg:grid-cols-6 xl:grid-cols-8">
+    {#each $ownersContext as owner}
+        <button
+            on:click={() => handleOwnerClick(owner)}
+            class="flex items-center gap-2 rounded border bg-zinc-800 p-2 hover:bg-zinc-700 {peopleComing.includes(owner.name) ? 'border-green-500' : ''}"
+        >
+            <div class="h-12 w-12">
+                <Image src={owner.imageUrl} />
+            </div>
+            <div class="flex flex-col items-start">
+                <span class="text-xl">{owner.name}</span>
+                <span><i class="bi bi-joystick" /> {owner.gamesOwned.length}</span>
+            </div>
+        </button>
+    {/each}
 </div>
+
+{#if peopleComing.length > 1}
+    <div class="container mx-auto p-4">
+        <h2 class="text-xl"><i class="bi bi-people-fill" /> {peopleComing.length} people</h2>
+        <h2 class="text-xl"><i class="bi bi-joystick" /> {lists.ownersComing.length} unique games</h2>
+        <h2 class="text-xl">
+            <i class="bi bi-joystick" />
+            {lists.suitableForPlayers.length} suitable for <i class="bi bi-people-fill" />
+            {peopleComing.length} players
+        </h2>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4 pt-8">
+            {#each lists.ownersComing as game}
+                <div class={game.minPlayers <= peopleComing.length && game.maxPlayers >= peopleComing.length ? '' : 'opacity-20'}>
+                    <GameCard {game} locked={true} />
+                </div>
+            {/each}
+        </div>
+    </div>
+{/if}
