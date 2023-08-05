@@ -34,16 +34,6 @@ export class DatabaseService {
         return this.httpGet<string[]>(`${this.url}/keys/*`)
     }
 
-    async reset() {
-        const keys = await this.getKeys()
-        for (const key of keys) {
-            console.log(`Deleting ${key}`)
-            await fetch(`${this.url}/del/${key}`, this.headers)
-        }
-        const res = await fetch(`${this.url}/del/${keys.join(',')}`, this.headers)
-        return res.json()
-    }
-
     // ------------------ Owners ------------------
 
     async getOwners(): Promise<OwnerDto[]> {

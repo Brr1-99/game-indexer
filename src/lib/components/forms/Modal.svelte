@@ -1,6 +1,6 @@
 <script lang="ts">
     import { modalContext, modalTypeContext } from '$lib/context/general'
-    import { GameForm, LinkGamesForm, OwnerForm } from '..'
+    import { GameForm, OwnerForm } from '..'
     import GameFormEdit from './GameFormEdit.svelte'
 
     const modal = {
@@ -34,8 +34,6 @@
         <GameFormEdit />
     {:else if $modalTypeContext === 'create-owner'}
         <OwnerForm />
-    {:else if $modalTypeContext === 'link-games'}
-        <LinkGamesForm />
     {/if}
 
     <button
