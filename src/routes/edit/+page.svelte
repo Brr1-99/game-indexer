@@ -1,10 +1,6 @@
 <script lang="ts">
-    import { PUBLIC_REDIS_TOKEN } from '$env/static/public'
     import { Button, GameCard, ModalGame, OwnerCard } from '$lib/components'
     import { gamesContext, modalContext, modalTypeContext, ownersContext } from '$lib/context/general'
-    import { DatabaseService } from '$lib/services/DatabaseService.js'
-
-    const databaseService = new DatabaseService(PUBLIC_REDIS_TOKEN)
 
     // ------------------ Button functions ------------------
     async function createOwner() {
@@ -16,20 +12,7 @@
         modalTypeContext.set('create-game')
         modalContext.set(!$modalContext)
     }
-
-    async function reset() {
-        await databaseService.reset()
-        const owners = await databaseService.getOwners()
-        const games = await databaseService.getGames()
-        ownersContext.set(owners)
-        gamesContext.set(games)
-    }
 </script>
-
-<!-- ONLY IF NEEDED -->
-<!-- <Button onClick={reset}>
-    reset DB
-</Button> -->
 
 <ModalGame />
 
@@ -37,7 +20,7 @@
     <!-- OWNERS -->
     <section class="p-8">
         <h2 class="text-2xl font-bold">Owners</h2>
-        <hr />
+        <hr class="mb-2" />
 
         <Button onClick={createOwner}>
             <i class="bi bi-person-fill-add" /> Add
@@ -53,7 +36,7 @@
     <!-- GAMES -->
     <section class="p-8">
         <h2 class="text-2xl font-bold">Games</h2>
-        <hr />
+        <hr class="mb-2" />
 
         <Button onClick={createGame}>
             <i class="bi bi-person-fill-add" /> Add

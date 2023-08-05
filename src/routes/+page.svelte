@@ -4,7 +4,9 @@
     import { gamesContext, ownersContext } from '$lib/context/general'
     import type { GameDto, OwnerDto } from '$lib/types'
 
-    $: peopleComing = ['David', 'Alex'] as string[]
+    $: peopleComing = [] as string[]
+
+    // ------------------ Methods ------------------
 
     function handleOwnerClick(owner: OwnerDto): void {
         peopleComing = peopleComing.includes(owner.name)
@@ -16,11 +18,12 @@
 
     const filterByOwnersComing = (game: GameDto, peopleComing: Array<string>) =>
         $ownersContext
-            .filter(owner => peopleComing.includes(owner.name)) // only owners coming
-            .some(owner => owner.gamesOwned.includes(game.name)) // only games owned by owners coming
+            .filter(owner => peopleComing.includes(owner.name)) // only people coming
+            .some(owner => owner.gamesOwned.includes(game.name)) // only games owned by people coming
 
     const filterByMinMaxPlayers = (game: GameDto) => game.minPlayers <= peopleComing.length && game.maxPlayers >= peopleComing.length
 
+    // ------------------ Lists with filters applied ------------------
     $: lists = {
         all: $gamesContext,
         ownersComing: $gamesContext.filter(game => filterByOwnersComing(game, peopleComing)),
