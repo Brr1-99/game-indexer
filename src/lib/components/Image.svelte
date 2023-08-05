@@ -6,11 +6,9 @@
 -->
 <script lang="ts">
     export let src: string
-
-    const style = 'background-image: url(' + src + ');'
 </script>
 
-<div class="rounded bgimage h-full w-full" {style} />
+<div class="rounded bgimage h-full w-full" style="background-image: url({src});" />
 
 <style>
     .bgimage {

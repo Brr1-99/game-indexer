@@ -1,7 +1,7 @@
 <script lang="ts">
     import { modalContext, modalTypeContext, selectedOwnerContext } from '$lib/context/general'
     import type { OwnerDto } from '$lib/types'
-    import { Button, Image } from '.'
+    import { Image } from '.'
 
     export let owner: OwnerDto
 
@@ -12,26 +12,17 @@
     }
 </script>
 
-<div class="rounded bg-zinc-700 p-2">
-    <div class="mb-2 text-center text-xl flex gap-2">
-        <div class="w-12 h-12">
-            <Image src={owner.imageUrl} />
-        </div>
-        <span>{owner.name}</span>
+<a href="/owners/{owner.name}" class="relative flex items-center gap-2 rounded bg-zinc-800 p-2 hover:bg-zinc-600">
+    <div class="h-12 w-12">
+        <Image src={owner.imageUrl} />
     </div>
-
-    <div class="flex justify-between items-center mb-2">
-        <p class="text-center">games: {owner.gamesOwned.length}</p>
-        <Button onClick={linkGames} title='Add games' >
-            <i class="bi bi-list-ul"></i>
-        </Button>
+    <div class="flex flex-col items-start">
+        <span class="text-xl">{owner.name}</span>
+        <span><i class="bi bi-joystick" /> {owner.gamesOwned.length}</span>
     </div>
-
-    <hr />
-
-    <div class="grid pt-2">
-        {#each owner.gamesOwned as game}
-            <span>{game}</span>
-        {/each}
+    <div class="absolute bottom-1 right-1">
+        <!-- <Button onClick={linkGames} title="Edit owner">
+            <i class="bi bi-pencil-square" />
+        </Button> -->
     </div>
-</div>
+</a>
