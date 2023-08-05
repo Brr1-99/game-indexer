@@ -9,8 +9,8 @@
     gamesContext.set(data.games)
     
     const links = [
-        ['/', 'Games List'],
-        ['/play', 'Play']
+        ['/', 'Play'],
+        ['/edit', 'Edit']
     ]
 </script>
 
