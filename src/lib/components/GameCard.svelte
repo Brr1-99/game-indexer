@@ -17,8 +17,8 @@
     <!-- <div class="bgimage h-full w-full rounded" style="background-image: url({game.imageUrl});" /> -->
     <Image src={game.imageUrl} />
 
-    <div class="relative">
-        <h3 class="py-2 text-lg">{game.name}</h3>
+    <div class="relative overflow-hidden">
+        <h3 class="py-2 text-lg overflow-hidden text-ellipsis whitespace-nowrap">{game.name}</h3>
         <p><i class="bi bi-clock-fill" /> {game.gameDuration} mins</p>
         <p><i class="bi bi-people-fill" /> {game.minPlayers} - {game.maxPlayers}</p>
 

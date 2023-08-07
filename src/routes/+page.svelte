@@ -4,14 +4,26 @@
     import { gamesContext, ownersContext } from '$lib/context/general'
     import type { GameDto, OwnerDto } from '$lib/types'
 
-    $: peopleComing = [] as string[]
+    $: peopleComing = ['Alex', 'Marcos'] as string[]
 
+    $: gamesWithStars = $gamesContext.map(game => ({
+        ...game,
+        stars: getGameStars(game.name, peopleComing)
+    }))
     // ------------------ Methods ------------------
 
     function handleOwnerClick(owner: OwnerDto): void {
         peopleComing = peopleComing.includes(owner.name)
             ? peopleComing.filter(name => name !== owner.name) // remove it
             : [...peopleComing, owner.name] // add it
+    }
+
+    function getGameStars(gameName: string, peopleComing: string[]): number {
+        const peopleComingObjs = $ownersContext.filter(owner => peopleComing.includes(owner.name))
+        const peopleComingObjsWithVotes = peopleComingObjs.filter(owner => owner.gamesPlayed[gameName])
+        const stars = peopleComingObjsWithVotes.reduce((acc, owner) => acc + owner.gamesPlayed[gameName].rating, 0)
+        console.log(stars, peopleComingObjsWithVotes.length)
+        return Number((stars / peopleComingObjsWithVotes.length || 1).toFixed(1))
     }
 
     // ------------------ Filters ------------------
@@ -25,9 +37,8 @@
 
     // ------------------ Lists with filters applied ------------------
     $: lists = {
-        all: $gamesContext,
-        ownersComing: $gamesContext.filter(game => filterByOwnersComing(game, peopleComing)),
-        suitableForPlayers: $gamesContext.filter(game => filterByOwnersComing(game, peopleComing)).filter(filterByMinMaxPlayers)
+        ownersComing: gamesWithStars.filter(game => filterByOwnersComing(game, peopleComing)),
+        suitableForPlayers: gamesWithStars.filter(game => filterByOwnersComing(game, peopleComing)).filter(filterByMinMaxPlayers)
     }
 </script>
 
@@ -61,9 +72,10 @@
         </h2>
 
         <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8 gap-4 pt-8">
-            {#each lists.ownersComing as game}
+            {#each lists.ownersComing.sort((a,b) => b.stars - a.stars) as game}
                 <div class={game.minPlayers <= peopleComing.length && game.maxPlayers >= peopleComing.length ? '' : 'opacity-20'}>
                     <GameCard {game} locked={true} />
+                    <span>{game.stars} <i class="bi bi-star-fill text-yellow-400" /></span>
                 </div>
             {/each}
         </div>
