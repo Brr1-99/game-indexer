@@ -31,7 +31,7 @@ export class DatabaseService {
     // ------------------ Methods ------------------
 
     async getKeys(): Promise<string[]> {
-        return this.httpGet<string[]>(`${this.url}/keys/*`)
+        return this.httpGet<string[]>(`${this.url}/keys/${this.prefix}*`)
     }
 
     // ------------------ Owners ------------------

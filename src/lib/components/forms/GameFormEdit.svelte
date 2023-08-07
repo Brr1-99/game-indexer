@@ -1,6 +1,6 @@
 <script lang="ts">
     import { PUBLIC_REDIS_TOKEN } from '$env/static/public'
-    import { DatabaseService } from '$lib/services/DatabaseService'
+    import { DatabaseService } from '$lib/services/database.service'
     import { gamesContext, modalContext, selectedGameContext } from '$lib/context/general'
     import { Button } from '..'
 

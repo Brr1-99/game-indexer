@@ -1,5 +1,5 @@
 import { PUBLIC_REDIS_TOKEN } from '$env/static/public'
-import { DatabaseService } from '$lib/services/DatabaseService'
+import { DatabaseService } from '$lib/services/database.service'
 
 /** @type {import('./$types').PageLoad} */
 export async function load() {
