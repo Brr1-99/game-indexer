@@ -68,7 +68,7 @@
 <ModalGame />
 
 <div class="mx-auto grid lg:w-[56rem] lg:grid-cols-2">
-    <div class="mx-auto w-96 rounded bg-zinc-800 p-4">
+    <div class="mx-auto sm:w-96 rounded bg-zinc-800 p-4">
         <div class="relative flex gap-2">
             <button on:click={changePhoto} class="h-12 w-12">
                 <Image src={String(owner?.imageUrl)} />
@@ -95,7 +95,7 @@
         </div>
     </div>
 
-    <div class="mx-auto mt-4 w-96 rounded bg-zinc-800 px-2 py-4 lg:mt-0">
+    <div class="mx-auto mt-4 sm:w-96 rounded bg-zinc-800 px-2 py-4 lg:mt-0">
         <h2 class="mb-4 text-center text-2xl">Games review:</h2>
 
         <div class="grid grid-cols-3 text-center">
@@ -109,7 +109,7 @@
                     <div class="h-8 w-8">
                         <Image src={game.imageUrl} />
                     </div>
-                    <div class="overflow-hidden text-ellipsis whitespace-nowrap text-sm">{game.name}</div>
+                    <div title={game.name} class="overflow-hidden text-ellipsis whitespace-nowrap text-sm">{game.name}</div>
                 </div>
 
                 <div class="flex items-center justify-start">
