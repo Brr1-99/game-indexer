@@ -16,7 +16,7 @@
 
 <ModalGame />
 
-<div class="container mx-auto grid lg:grid-cols-2 gap-8">
+<div class="container mx-auto grid gap-8 lg:grid-cols-2">
     <!-- OWNERS -->
     <section class="p-8">
         <h2 class="text-2xl font-bold">Owners</h2>
@@ -26,7 +26,7 @@
             <i class="bi bi-person-fill-add" /> Add
         </Button>
 
-        <div class="mt-4 grid grid-cols-2 xl:grid-cols-3 gap-2 lg:gap-4">
+        <div class="mt-4 grid grid-cols-2 gap-2 lg:gap-4 xl:grid-cols-3">
             {#each $ownersContext as owner}
                 <OwnerCard {owner} />
             {/each}
@@ -35,14 +35,14 @@
 
     <!-- GAMES -->
     <section class="p-8">
-        <h2 class="text-2xl font-bold">Games</h2>
+        <h2 class="text-2xl font-bold">Games: {$gamesContext.length}</h2>
         <hr class="mb-2" />
 
         <Button onClick={createGame}>
             <i class="bi bi-person-fill-add" /> Add
         </Button>
 
-        <div class="mt-4 grid grid-cols-2 xl:grid-cols-3 gap-4">
+        <div class="mt-4 grid grid-cols-2 gap-4 xl:grid-cols-3">
             {#each $gamesContext.sort((a, b) => a.name.localeCompare(b.name)) as game}
                 <GameCard {game} />
             {/each}
