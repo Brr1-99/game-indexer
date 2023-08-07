@@ -37,9 +37,9 @@
     {#each $ownersContext as owner}
         <button
             on:click={() => handleOwnerClick(owner)}
-            class="flex items-center gap-2 rounded border bg-zinc-800 p-2 hover:bg-zinc-700 {peopleComing.includes(owner.name) ? 'border-green-500' : ''}"
+            class="flex items-center gap-2 rounded border-2 bg-zinc-800 p-2 hover:bg-zinc-700 {peopleComing.includes(owner.name) ? 'border-green-500' : 'border-zinc-800'}"
         >
-            <div class="h-12 w-12">
+            <div class="h-20 w-20">
                 <Image src={owner.imageUrl} />
             </div>
             <div class="flex flex-col items-start">

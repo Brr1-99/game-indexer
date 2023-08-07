@@ -4,16 +4,10 @@
     import { Image } from '.'
 
     export let owner: OwnerDto
-
-    function linkGames() {
-        modalTypeContext.set('link-games')
-        modalContext.set(!$modalContext)
-        selectedOwnerContext.set(owner)
-    }
 </script>
 
 <a href="/owners/{owner.name}" class="relative flex items-center gap-2 rounded bg-zinc-800 p-2 hover:bg-zinc-600">
-    <div class="h-12 w-12">
+    <div class="h-20 w-20">
         <Image src={owner.imageUrl} />
     </div>
     <div class="flex flex-col items-start">
