@@ -10,7 +10,7 @@ const headers = {
 if (!token) throw new Error('No token provided')
 
 async function httpGet(url, parse = false) {
-    // console.log(`Fetching ${url}`)
+    console.log(`---- Fetching ${url}`)
     const res = await fetch(url, headers)
     const data = await res.json()
     return parse ? JSON.parse(data.result) : data.result
@@ -31,5 +31,7 @@ async function getKeys() {
         }),
     )
 
-    await writeFile('scripts/output.json', JSON.stringify(result))
+    const date = new Date().toLocaleDateString().replaceAll('/', '-')
+
+    await writeFile(`scripts/game-indexer-${date}.json`, JSON.stringify(result))
 })()
