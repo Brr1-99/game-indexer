@@ -6,7 +6,7 @@
 
     // ------------------ Data ------------------
     // which owners are selected
-    $: peopleComing = ['Alex', 'David'] as string[]
+    $: peopleComing = [] as string[]
 
     // the games but with 2 props added: stars and lastTimePlayed (avg)
     $: games = $gamesContext.map(game => ({
