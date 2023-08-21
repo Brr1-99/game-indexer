@@ -9,6 +9,7 @@
     $: owner = $ownersContext.find(o => o.name === data.owner_name) as OwnerDto
 
     const databaseService = new DatabaseService(PUBLIC_REDIS_TOKEN)
+    let searchedGame : string = '' 
 
     // ------------------ Button functions ------------------
 
@@ -81,8 +82,9 @@
 
         <hr class="mt-4 w-4/5" />
         <p class="my-4">Select games in property:</p>
+        <input class="mb-2 bg-zinc-700 p-1" type="text" id="name" bind:value={searchedGame} placeholder="Game name" />
         <div class="grid grid-cols-3 gap-2">
-            {#each $gamesContext as game}
+            {#each $gamesContext.filter(game => game.name.toLocaleLowerCase().includes(searchedGame.toLocaleLowerCase())) as game}
                 <button
                     on:click={() => gameClicked(game.name)}
                     class="border p-1 {owner?.gamesOwned.includes(game.name) ? 'border-green-400 bg-green-900/10' : 'border-red-400 bg-red-900/10'}"
