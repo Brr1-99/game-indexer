@@ -1,7 +1,7 @@
 <script lang="ts">
-    import { Image } from '$lib/components'
+    import { Image, Modal } from '$lib/components'
     import GameCard from '$lib/components/GameCard.svelte'
-    import { gamesContext, ownersContext } from '$lib/context/general'
+    import { gamesContext, modalContext, modalTypeContext, ownersContext, playedTodayContext } from '$lib/context/general'
     import type { GameDto, OwnerDto } from '$lib/types'
 
     // ------------------ Data ------------------
@@ -14,6 +14,21 @@
         stars: getGameStars(game.name, peopleComing),
         lastTimePlayed: getLastTimePlayed(game.name, peopleComing),
     }))
+
+    // ------------------ Modal buttons ------------------
+    async function onClickGame(gameClicked: string, peopleComing: string[]) {
+        // When clicking on a game, we open a modal that offers to fill if the game
+        // has been played today for the people selected
+        playedTodayContext.set({
+            gameName: gameClicked,
+            peopleWhoPlayed: peopleComing,
+        })
+
+        setTimeout(() => {
+            modalTypeContext.set('played-today')
+            modalContext.set(!$modalContext)
+        }, 100)
+    }
 
     // ------------------ Methods ------------------
     function handleOwnerClick(owner: OwnerDto): void {
@@ -46,8 +61,8 @@
 
     // ------------------ Sorts ------------------
     function sortGames(a: (typeof games)[0], b: (typeof games)[0]) {
-        const a_rating = a.stars + 0.03 * getDaysPassedSince(a.lastTimePlayed) // stars + 1 extra star per month
-        const b_rating = b.stars + 0.03 * getDaysPassedSince(b.lastTimePlayed) // stars + 1 extra star per month
+        const a_rating = a.stars + 0.005 * getDaysPassedSince(a.lastTimePlayed) // stars + 1 extra star per 6 month
+        const b_rating = b.stars + 0.005 * getDaysPassedSince(b.lastTimePlayed) // stars + 1 extra star per 6 month
         return b_rating - a_rating
     }
 
@@ -65,6 +80,8 @@
         suitableForPlayers: games.filter(game => filterByOwnersComing(game, peopleComing)).filter(filterByMinMaxPlayers),
     }
 </script>
+
+<Modal />
 
 <h1 class="mb-8 text-center text-2xl font-bold">Select the people who comes to play today</h1>
 
@@ -100,7 +117,9 @@
         <div class="grid grid-cols-2 gap-4 pt-8 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
             {#each lists.fromOwnersComing.sort(sortGames) as game}
                 <div class={game.minPlayers <= peopleComing.length && game.maxPlayers >= peopleComing.length ? '' : 'opacity-20'}>
-                    <GameCard {game} locked={true} />
+                    <button class="w-full" on:click={() => onClickGame(game.name, peopleComing)}>
+                        <GameCard {game} locked={true} />
+                    </button>
                     <p title="Average rating">{game.stars} <i class="bi bi-star-fill text-yellow-400" /></p>
                     <p title="Average days since last time played"><i class="bi bi-calendar4" /> {getDaysPassedSince(game.lastTimePlayed)}</p>
                     <!-- Development: show average last time Played -->
