@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Button, GameCard, ModalGame, OwnerCard } from '$lib/components'
+    import { Button, GameCard, Modal, OwnerCard } from '$lib/components'
     import { gamesContext, modalContext, modalTypeContext, ownersContext } from '$lib/context/general'
 
     // ------------------ Button functions ------------------
@@ -14,7 +14,7 @@
     }
 </script>
 
-<ModalGame />
+<Modal />
 
 <div class="container mx-auto grid gap-8 lg:grid-cols-2">
     <!-- OWNERS -->

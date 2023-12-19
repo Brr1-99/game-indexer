@@ -1,7 +1,6 @@
 <script lang="ts">
     import { modalContext, modalTypeContext } from '$lib/context/general'
-    import { GameForm, OwnerForm } from '..'
-    import GameFormEdit from './GameFormEdit.svelte'
+    import { GameForm, OwnerForm, GameFormEdit, PlayedTodayForm } from '..'
 
     const modal = {
         // Element.showModal() is still not noted in TS lib definitions
@@ -34,6 +33,8 @@
         <GameFormEdit />
     {:else if $modalTypeContext === 'create-owner'}
         <OwnerForm />
+    {:else if $modalTypeContext === 'played-today'}
+        <PlayedTodayForm />
     {/if}
 
     <button
