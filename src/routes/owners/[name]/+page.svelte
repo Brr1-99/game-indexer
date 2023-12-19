@@ -2,7 +2,7 @@
     import type { OwnerDto } from '$lib/types/index.js'
     import { PUBLIC_REDIS_TOKEN } from '$env/static/public'
     import { DatabaseService } from '$lib/services/database.service.js'
-    import { Button, Image, ModalGame } from '$lib/components/index.js'
+    import { Button, Image, Modal } from '$lib/components/index.js'
     import { gamesContext, ownersContext } from '$lib/context/general'
 
     export let data
@@ -65,7 +65,7 @@
     }
 </script>
 
-<ModalGame />
+<Modal />
 
 <div class="mx-auto grid lg:w-[56rem] lg:grid-cols-2">
     <div class="mx-auto sm:w-96 rounded bg-zinc-800 p-4">
