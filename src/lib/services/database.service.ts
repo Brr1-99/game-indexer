@@ -79,4 +79,31 @@ export class DatabaseService {
 
         return res.json()
     }
+
+    async setGamePlayedToday(gameName: string, person: string) {
+        console.log(`${person} played ${gameName} today`)
+
+        const key = `${this.prefix}owners:${person}`
+
+        // fetch current owner data
+        const ownerData = await this.httpGet<OwnerDto>(`${this.url}/get/${key}`, true)
+
+        if (ownerData.gamesPlayed[gameName]) {
+            // update owner data
+            ownerData.gamesPlayed[gameName].lastTimePlayed = Date.now()
+        } else {
+            // create new entry
+            ownerData.gamesPlayed[gameName] = {
+                lastTimePlayed: Date.now(),
+                rating: 5,
+            }
+        }
+
+        // Save owner dat
+        await fetch(`${this.url}/set/${key}`, {
+            ...this.headers,
+            method: 'POST',
+            body: JSON.stringify(ownerData),
+        })
+    }
 }
