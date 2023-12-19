@@ -1,0 +1,222 @@
+[
+    [
+        "game-indexer-web:games:4 en raya",
+        "{\"name\":\"4 en raya\",\"imageUrl\":\"https://th.bing.com/th/id/OIP.iFUaSb7A9zbN8FDMS7iFoAHaFj?rs=1&pid=ImgDetMain\",\"gameDuration\":5,\"minPlayers\":2,\"maxPlayers\":2}"
+    ],
+    [
+        "game-indexer-web:games:Ajedrez",
+        "{\"name\":\"Ajedrez\",\"imageUrl\":\"https://upload.wikimedia.org/wikipedia/commons/d/d9/Opening_chess_position_from_black_side.jpg\",\"gameDuration\":25,\"minPlayers\":2,\"maxPlayers\":2}"
+    ],
+    [
+        "game-indexer-web:games:Arre Unicornio",
+        "{\"name\":\"Arre Unicornio\",\"imageUrl\":\"https://media.zacatrus.com/catalog/product/cache/f22f70ef8ee260256901b557cf6bf49a/h/u/huelicorne_1_.jpg\",\"gameDuration\":30,\"minPlayers\":2,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:Backgammon",
+        "{\"name\":\"Backgammon\",\"imageUrl\":\"https://th.bing.com/th/id/R.90c3fd5a43919242e8cd008613530dbe?rik=VxmqiRuHOBrt%2bw&riu=http%3a%2f%2ftechdoorblog.weebly.com%2fuploads%2f1%2f3%2f0%2f1%2f130136186%2f610bozupxml-sl1024-ccccccc_orig.jpg&ehk=oxswxAfqc3XydB9ZAH%2bF%2fdEqP%2fHRJoqNIz934RxPueM%3d&risl=&pid=ImgRaw&r=0\",\"gameDuration\":60,\"minPlayers\":2,\"maxPlayers\":2}"
+    ],
+    [
+        "game-indexer-web:games:Baraja Española",
+        "{\"name\":\"Baraja Española\",\"imageUrl\":\"https://www.asesmus.com/wp-content/uploads/2022/08/71Y5q39MbfL._AC_SL1309_.jpg\",\"gameDuration\":20,\"minPlayers\":2,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:Bote salvavidas",
+        "{\"name\":\"Bote salvavidas\",\"imageUrl\":\"https://th.bing.com/th/id/OIP.m6LRhkBEYBImep08G2JaDAHaFj?pid=ImgDet&rs=1\",\"gameDuration\":60,\"minPlayers\":4,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:CATAN",
+        "{\"name\":\"CATAN\",\"imageUrl\":\"https://donmeeple.com/wp-content/uploads/2020/07/catan-juego-cartas-portada-don-meeple.jpg\",\"gameDuration\":30,\"minPlayers\":2,\"maxPlayers\":4}"
+    ],
+    [
+        "game-indexer-web:games:Carcassonne",
+        "{\"name\":\"Carcassonne\",\"imageUrl\":\"https://th.bing.com/th/id/OIP.Nov0duOiE7Mh5CjeKhbGBgHaE8?w=244&h=180&c=7&r=0&o=5&pid=1.7\",\"gameDuration\":120,\"minPlayers\":2,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:Cartas contra la humanidad",
+        "{\"name\":\"Cartas contra la humanidad\",\"imageUrl\":\"https://m.media-amazon.com/images/I/71mRlflrEkS._AC_SL1500_.jpg\",\"gameDuration\":60,\"minPlayers\":2,\"maxPlayers\":14}"
+    ],
+    [
+        "game-indexer-web:games:Casting Shadows",
+        "{\"name\":\"Casting Shadows\",\"imageUrl\":\"https://teeturtle-s3-web.s3.amazonaws.com/accounts/2/uploads/CS_Bundle_Base-and-EXP-Bundle_Site-Comp_1000x1000.png\",\"gameDuration\":45,\"minPlayers\":2,\"maxPlayers\":4}"
+    ],
+    [
+        "game-indexer-web:games:Ciudadelas",
+        "{\"name\":\"Ciudadelas\",\"imageUrl\":\"https://th.bing.com/th/id/R.2a22f47ceab0f39bd123afb59eae194b?rik=OR5wboES7cP97A&pid=ImgRaw&r=0\",\"gameDuration\":30,\"minPlayers\":2,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:Cluedo",
+        "{\"name\":\"Cluedo\",\"imageUrl\":\"https://upload.wikimedia.org/wikipedia/commons/4/4c/Cluedo_Clue_pack_logo.png\",\"gameDuration\":60,\"minPlayers\":2,\"maxPlayers\":6}"
+    ],
+    [
+        "game-indexer-web:games:Cortex",
+        "{\"name\":\"Cortex\",\"imageUrl\":\"https://multimedia.dideco.es/img/juego/EAN_3770004936052-5.jpg\",\"gameDuration\":15,\"minPlayers\":2,\"maxPlayers\":6}"
+    ],
+    [
+        "game-indexer-web:games:Código secreto",
+        "{\"name\":\"Código secreto\",\"imageUrl\":\"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIchHefcuB00jFgLuIbxIP70VSEwbVg9x0mQ&usqp=CAU\",\"gameDuration\":15,\"minPlayers\":2,\"maxPlayers\":14}"
+    ],
+    [
+        "game-indexer-web:games:DOS",
+        "{\"name\":\"DOS\",\"imageUrl\":\"https://th.bing.com/th/id/OIP.fTvlrZclGbcjKy8d7nhHZAHaD4?w=311&h=180&c=7&r=0&o=5&pid=1.7\",\"gameDuration\":20,\"minPlayers\":2,\"maxPlayers\":12}"
+    ],
+    [
+        "game-indexer-web:games:Dixit",
+        "{\"name\":\"Dixit\",\"imageUrl\":\"https://m.media-amazon.com/images/I/71FMZqq4ZtL.jpg\",\"gameDuration\":30,\"minPlayers\":3,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:Dobble",
+        "{\"name\":\"Dobble\",\"imageUrl\":\"https://www.jeuxdenim.be/images/jeux/Dobble_large01.jpg\",\"gameDuration\":15,\"minPlayers\":2,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:Dominó",
+        "{\"name\":\"Dominó\",\"imageUrl\":\"https://upload.wikimedia.org/wikipedia/commons/a/ae/Dominospiel.JPG\",\"gameDuration\":20,\"minPlayers\":2,\"maxPlayers\":4}"
+    ],
+    [
+        "game-indexer-web:games:Exploding Kittens",
+        "{\"name\":\"Exploding Kittens\",\"imageUrl\":\"https://m.media-amazon.com/images/I/612ZTZ0vc9L._AC_SL1024_.jpg\",\"gameDuration\":10,\"minPlayers\":2,\"maxPlayers\":10}"
+    ],
+    [
+        "game-indexer-web:games:Five Alive",
+        "{\"name\":\"Five Alive\",\"imageUrl\":\"https://shop.hasbro.com/_next/image?url=https%3A%2F%2Fwww.hasbro.com%2Fcommon%2Fproductimages%2Fes_ES%2FE88849455863402891467E2D8B61DE43%2F65fb64a2039648648ec1d6829b16ddcd30074b38.jpg&w=640&q=75\",\"gameDuration\":10,\"minPlayers\":2,\"maxPlayers\":6}"
+    ],
+    [
+        "game-indexer-web:games:Gamers Quizz",
+        "{\"name\":\"Gamers Quizz\",\"imageUrl\":\"https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202206/13/00197632123416____3__1200x1200.jpg\",\"gameDuration\":60,\"minPlayers\":2,\"maxPlayers\":6}"
+    ],
+    [
+        "game-indexer-web:games:Happy Little Dinosaurs",
+        "{\"name\":\"Happy Little Dinosaurs\",\"imageUrl\":\"https://teeturtle-s3-web.s3.amazonaws.com/accounts/2/uploads/HLD-Purchase-Game-1_Boxes_1000x1000-DD.png\",\"gameDuration\":30,\"minPlayers\":2,\"maxPlayers\":4}"
+    ],
+    [
+        "game-indexer-web:games:Here to Slay",
+        "{\"name\":\"Here to Slay\",\"imageUrl\":\"https://teeturtle-s3-web.s3.amazonaws.com/accounts/2/uploads/HTS-Base-Game-WDx-BNx-Bundle-Site-Asset-Graphic-Purchase-Game-Game-Box_1000x1000-2_v3.png\",\"gameDuration\":40,\"minPlayers\":2,\"maxPlayers\":10}"
+    ],
+    [
+        "game-indexer-web:games:Hundir la flota",
+        "{\"name\":\"Hundir la flota\",\"imageUrl\":\"https://th.bing.com/th/id/R.8b249f3feedccc098af96e1b2c8efbbf?rik=r32aZMn8GJIcvQ&pid=ImgRaw&r=0\",\"gameDuration\":20,\"minPlayers\":2,\"maxPlayers\":2}"
+    ],
+    [
+        "game-indexer-web:games:Joking Hazard",
+        "{\"name\":\"Joking Hazard\",\"imageUrl\":\"https://th.bing.com/th/id/OIP.oNOfxhiKuQ3tE3qn7kK_2QHaEJ?pid=ImgDet&rs=1\",\"gameDuration\":40,\"minPlayers\":3,\"maxPlayers\":10}"
+    ],
+    [
+        "game-indexer-web:games:Jungle Speed",
+        "{\"name\":\"Jungle Speed\",\"imageUrl\":\"https://media.zacatrus.com/catalog/product/cache/f22f70ef8ee260256901b557cf6bf49a/j/u/jungle_speed.jpg\",\"gameDuration\":15,\"minPlayers\":3,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:Love Letter",
+        "{\"name\":\"Love Letter\",\"imageUrl\":\"https://whatsericplaying.files.wordpress.com/2021/01/cards-2-3.jpg?w=1024\",\"gameDuration\":15,\"minPlayers\":2,\"maxPlayers\":6}"
+    ],
+    [
+        "game-indexer-web:games:Monopoly",
+        "{\"name\":\"Monopoly\",\"imageUrl\":\"https://m.media-amazon.com/images/I/81qy+MXuxDL._AC_UF894,1000_QL80_.jpg\",\"gameDuration\":180,\"minPlayers\":2,\"maxPlayers\":6}"
+    ],
+    [
+        "game-indexer-web:games:Pocket Madness",
+        "{\"name\":\"Pocket Madness\",\"imageUrl\":\"https://th.bing.com/th/id/OIP.y92E0oJAnKHqqgC-cXAGmgHaEg?pid=ImgDet&rs=1\",\"gameDuration\":40,\"minPlayers\":2,\"maxPlayers\":4}"
+    ],
+    [
+        "game-indexer-web:games:Poker",
+        "{\"name\":\"Poker\",\"imageUrl\":\"https://th.bing.com/th/id/R.e1efc4c85748fb449fe1ea547f83d6f1?rik=LcF0k3eueLvC%2fA&pid=ImgRaw&r=0\",\"gameDuration\":20,\"minPlayers\":2,\"maxPlayers\":14}"
+    ],
+    [
+        "game-indexer-web:games:Polilla tramposa",
+        "{\"name\":\"Polilla tramposa\",\"imageUrl\":\"https://m.media-amazon.com/images/I/71meMWbA3HL.jpg\",\"gameDuration\":10,\"minPlayers\":3,\"maxPlayers\":5}"
+    ],
+    [
+        "game-indexer-web:games:Portal de Molthar",
+        "{\"name\":\"Portal de Molthar\",\"imageUrl\":\"https://th.bing.com/th/id/OIP.KzmCcD-E_Dnn5URDw_FpZgHaD4?pid=ImgDet&rs=1\",\"gameDuration\":30,\"minPlayers\":2,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:Rummikub",
+        "{\"name\":\"Rummikub\",\"imageUrl\":\"https://th.bing.com/th/id/OIP.33TNzpA-_YQtjBLgJALtRAHaFH?w=250&h=180&c=7&r=0&o=5&pid=1.7\",\"gameDuration\":60,\"minPlayers\":2,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:Samurai Sword",
+        "{\"name\":\"Samurai Sword\",\"imageUrl\":\"https://m.media-amazon.com/images/I/61vNcwnTvLL._AC_UF894,1000_QL80_.jpg\",\"gameDuration\":15,\"minPlayers\":3,\"maxPlayers\":7}"
+    ],
+    [
+        "game-indexer-web:games:Sushi Go!",
+        "{\"name\":\"Sushi Go!\",\"imageUrl\":\"https://th.bing.com/th/id/R.5943d256d777f0d9ac7be793db79b642?rik=dSfVsxSjJI0MIg&pid=ImgRaw&r=0\",\"gameDuration\":30,\"minPlayers\":2,\"maxPlayers\":5}"
+    ],
+    [
+        "game-indexer-web:games:The Grimwood",
+        "{\"name\":\"The Grimwood\",\"imageUrl\":\"https://img.fruugo.com/product/1/84/849256841_max.jpg\",\"gameDuration\":45,\"minPlayers\":2,\"maxPlayers\":6}"
+    ],
+    [
+        "game-indexer-web:games:Tic Tac K.O.",
+        "{\"name\":\"Tic Tac K.O.\",\"imageUrl\":\"https://12ax7web.s3.amazonaws.com/accounts/1/uploads/TTKO-Landing-Page-01-PurchaseGame_V2.png\",\"gameDuration\":30,\"minPlayers\":2,\"maxPlayers\":4}"
+    ],
+    [
+        "game-indexer-web:games:Time Bomb",
+        "{\"name\":\"Time Bomb\",\"imageUrl\":\"https://edicionesprimigenio.com/wp-content/uploads/2017/05/pic3554020.jpg\",\"gameDuration\":20,\"minPlayers\":4,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:Tiro al pato",
+        "{\"name\":\"Tiro al pato\",\"imageUrl\":\"https://th.bing.com/th/id/OIP.5OlGiMwBO-_2K6QefJFeegHaHa?pid=ImgDet&rs=1\",\"gameDuration\":30,\"minPlayers\":2,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:Tribu de sinvergüenzas",
+        "{\"name\":\"Tribu de sinvergüenzas\",\"imageUrl\":\"https://m.media-amazon.com/images/I/91fv4sSnNvL.__AC_SX300_SY300_QL70_ML2_.jpg\",\"gameDuration\":60,\"minPlayers\":2,\"maxPlayers\":15}"
+    ],
+    [
+        "game-indexer-web:games:Tripulación",
+        "{\"name\":\"Tripulación\",\"imageUrl\":\"https://www.theboardgamefamily.com/wp-content/uploads/2020/03/Crew_Choices.jpg\",\"gameDuration\":7,\"minPlayers\":2,\"maxPlayers\":5}"
+    ],
+    [
+        "game-indexer-web:games:UNO",
+        "{\"name\":\"UNO\",\"imageUrl\":\"https://th.bing.com/th/id/OIP.7MMoTxoTY3buZvb7sKZEZAHaEK?w=315&h=180&c=7&r=0&o=5&pid=1.7\",\"gameDuration\":20,\"minPlayers\":2,\"maxPlayers\":12}"
+    ],
+    [
+        "game-indexer-web:games:Unstable Unicorns",
+        "{\"name\":\"Unstable Unicorns\",\"imageUrl\":\"https://teeturtle-s3-web.s3.amazonaws.com/accounts/2/uploads/UU_PurchaseGames.png\",\"gameDuration\":30,\"minPlayers\":2,\"maxPlayers\":8}"
+    ],
+    [
+        "game-indexer-web:games:Unstable Unicorns Travel Edition",
+        "{\"name\":\"Unstable Unicorns Travel Edition\",\"imageUrl\":\"https://teeturtle-s3-web.s3.amazonaws.com/accounts/2/products/1986199882677/Front-82-Card-1-1000x1000.jpg\",\"gameDuration\":30,\"minPlayers\":2,\"maxPlayers\":4}"
+    ],
+    [
+        "game-indexer-web:games:Virus",
+        "{\"name\":\"Virus\",\"imageUrl\":\"https://tranjisgames.com/wp-content/uploads/2019/11/virus1_new-1.png\",\"gameDuration\":20,\"minPlayers\":2,\"maxPlayers\":6}"
+    ],
+    [
+        "game-indexer-web:games:What do you meme",
+        "{\"name\":\"What do you meme\",\"imageUrl\":\"https://th.bing.com/th/id/R.74ecd7d85d70a101455790856e58a8a0?rik=%2bPadzQ8bCNvI6g&pid=ImgRaw&r=0\",\"gameDuration\":40,\"minPlayers\":3,\"maxPlayers\":20}"
+    ],
+    [
+        "game-indexer-web:owners:Alex",
+        "{\"name\":\"Alex\",\"imageUrl\":\"https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbWE1d3FoZDIwOHA3OHowcmVqb2NoZWRrNTN3MHZpZTlicGp3bnUyeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WGFdv6kbikBq0/giphy.gif\",\"gamesOwned\":[\"Dixit\",\"Here to Slay\",\"Dobble\",\"Monopoly\",\"4 en raya\"],\"gamesPlayed\":{\"4 en raya\":{\"rating\":3,\"lastTimePlayed\":1691250599327},\"Carcassonne\":{\"rating\":5,\"lastTimePlayed\":0},\"Here to Slay\":{\"rating\":5,\"lastTimePlayed\":0},\"Dixit\":{\"rating\":2,\"lastTimePlayed\":1691252313784},\"Baraja Española\":{\"rating\":1,\"lastTimePlayed\":0},\"Arre Unicornio\":{\"rating\":2,\"lastTimePlayed\":0},\"Dobble\":{\"rating\":1,\"lastTimePlayed\":0},\"DOS\":{\"rating\":2,\"lastTimePlayed\":0},\"Five Alive\":{\"rating\":3,\"lastTimePlayed\":0},\"Happy Little Dinosaurs\":{\"rating\":1,\"lastTimePlayed\":0},\"Tic Tac K.O.\":{\"rating\":2,\"lastTimePlayed\":0},\"Tiro al pato\":{\"rating\":2,\"lastTimePlayed\":0},\"UNO\":{\"rating\":3,\"lastTimePlayed\":0},\"Virus\":{\"rating\":2,\"lastTimePlayed\":0},\"Hundir la flota\":{\"rating\":3,\"lastTimePlayed\":0},\"Joking Hazard\":{\"rating\":4,\"lastTimePlayed\":0},\"Love Letter\":{\"rating\":5,\"lastTimePlayed\":0},\"Poker\":{\"rating\":5,\"lastTimePlayed\":0},\"Portal de Molthar\":{\"rating\":5,\"lastTimePlayed\":0},\"Sushi Go!\":{\"rating\":3,\"lastTimePlayed\":0},\"Unstable Unicorns Travel Edition\":{\"rating\":2,\"lastTimePlayed\":0},\"Unstable Unicorns\":{\"rating\":2,\"lastTimePlayed\":0},\"What do you meme\":{\"rating\":4,\"lastTimePlayed\":0},\"Tripulación\":{\"rating\":5,\"lastTimePlayed\":0},\"Bote salvavidas\":{\"rating\":2,\"lastTimePlayed\":0},\"Ciudadelas\":{\"rating\":1,\"lastTimePlayed\":0},\"Pocket Madness\":{\"rating\":5,\"lastTimePlayed\":0},\"Time Bomb\":{\"rating\":2,\"lastTimePlayed\":0},\"Jungle Speed\":{\"rating\":4,\"lastTimePlayed\":0},\"Cortex\":{\"rating\":4,\"lastTimePlayed\":0},\"Rummikub\":{\"rating\":5,\"lastTimePlayed\":0},\"Samurai Sword\":{\"rating\":3,\"lastTimePlayed\":0},\"Cartas contra la humanidad\":{\"rating\":4,\"lastTimePlayed\":0},\"Tribu de sinvergüenzas\":{\"rating\":3,\"lastTimePlayed\":0},\"Polilla tramposa\":{\"rating\":2,\"lastTimePlayed\":0},\"Gamers Quizz\":{\"rating\":2,\"lastTimePlayed\":0},\"Exploding Kittens\":{\"rating\":5,\"lastTimePlayed\":0},\"Código secreto\":{\"rating\":5,\"lastTimePlayed\":0},\"Monopoly\":{\"rating\":3,\"lastTimePlayed\":0}}}"
+    ],
+    [
+        "game-indexer-web:owners:Bruno",
+        "{\"name\":\"Bruno\",\"imageUrl\":\"https://media4.giphy.com/media/zXKA3p9aR3u7u/giphy.gif?cid=ecf05e47tt0h36kxpwzhzqc9c14xrr6ewzm3rulsozkszklk&ep=v1_gifs_search&rid=giphy.gif&ct=g\",\"gamesOwned\":[\"Gamers Quizz\"],\"gamesPlayed\":{\"4 en raya\":{\"rating\":3,\"lastTimePlayed\":1692190442431},\"Arre Unicornio\":{\"rating\":4,\"lastTimePlayed\":0},\"Baraja Española\":{\"rating\":4,\"lastTimePlayed\":0},\"Carcassonne\":{\"rating\":5,\"lastTimePlayed\":0},\"Cartas contra la humanidad\":{\"rating\":5,\"lastTimePlayed\":0},\"Bote salvavidas\":{\"rating\":2,\"lastTimePlayed\":0},\"DOS\":{\"rating\":5,\"lastTimePlayed\":0},\"Dobble\":{\"rating\":4,\"lastTimePlayed\":0},\"Dixit\":{\"rating\":4,\"lastTimePlayed\":0},\"Cortex\":{\"rating\":4,\"lastTimePlayed\":0},\"Ciudadelas\":{\"rating\":4,\"lastTimePlayed\":0},\"Exploding Kittens\":{\"rating\":3,\"lastTimePlayed\":0},\"Five Alive\":{\"rating\":3,\"lastTimePlayed\":0},\"Gamers Quizz\":{\"rating\":2,\"lastTimePlayed\":0},\"Here to Slay\":{\"rating\":5,\"lastTimePlayed\":0},\"Happy Little Dinosaurs\":{\"rating\":3,\"lastTimePlayed\":0},\"Hundir la flota\":{\"rating\":1,\"lastTimePlayed\":0},\"Joking Hazard\":{\"rating\":4,\"lastTimePlayed\":0},\"Portal de Molthar\":{\"rating\":3,\"lastTimePlayed\":0},\"Tiro al pato\":{\"rating\":4,\"lastTimePlayed\":0}}}"
+    ],
+    [
+        "game-indexer-web:owners:Carmen",
+        "{\"name\":\"Carmen\",\"imageUrl\":\"https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTR2YWp0b204aHFjYXB0ZmlsNTN0M2xmZDdldzdsMWtud3JseTFjYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qANu7rwGBUfoA/giphy.gif\",\"gamesOwned\":[\"Love Letter\",\"Exploding Kittens\"],\"gamesPlayed\":{\"4 en raya\":{\"rating\":2,\"lastTimePlayed\":0},\"Arre Unicornio\":{\"rating\":3,\"lastTimePlayed\":0},\"Backgammon\":{\"rating\":1,\"lastTimePlayed\":0},\"Baraja Española\":{\"rating\":5,\"lastTimePlayed\":0},\"Bote salvavidas\":{\"rating\":3,\"lastTimePlayed\":0},\"Carcassonne\":{\"rating\":5,\"lastTimePlayed\":0},\"Cartas contra la humanidad\":{\"rating\":4,\"lastTimePlayed\":0},\"Ciudadelas\":{\"rating\":2,\"lastTimePlayed\":0},\"Cortex\":{\"rating\":2,\"lastTimePlayed\":0},\"Dixit\":{\"rating\":2,\"lastTimePlayed\":0},\"Dobble\":{\"rating\":4,\"lastTimePlayed\":0},\"DOS\":{\"rating\":4,\"lastTimePlayed\":0},\"Exploding Kittens\":{\"rating\":4,\"lastTimePlayed\":0},\"Five Alive\":{\"rating\":3,\"lastTimePlayed\":0},\"Gamers Quizz\":{\"rating\":2,\"lastTimePlayed\":0},\"Happy Little Dinosaurs\":{\"rating\":4,\"lastTimePlayed\":0},\"Here to Slay\":{\"rating\":5,\"lastTimePlayed\":0},\"Hundir la flota\":{\"rating\":5,\"lastTimePlayed\":0},\"Joking Hazard\":{\"rating\":3,\"lastTimePlayed\":0},\"Love Letter\":{\"rating\":2,\"lastTimePlayed\":0},\"Monopoly\":{\"rating\":3,\"lastTimePlayed\":0},\"Pocket Madness\":{\"rating\":5,\"lastTimePlayed\":0},\"Poker\":{\"rating\":2,\"lastTimePlayed\":0},\"Portal de Molthar\":{\"rating\":5,\"lastTimePlayed\":0},\"Rummikub\":{\"rating\":5,\"lastTimePlayed\":0},\"Samurai Sword\":{\"rating\":3,\"lastTimePlayed\":0},\"Sushi Go!\":{\"rating\":4,\"lastTimePlayed\":0},\"Tic Tac K.O.\":{\"rating\":4,\"lastTimePlayed\":0},\"Time Bomb\":{\"rating\":3,\"lastTimePlayed\":0},\"Tiro al pato\":{\"rating\":3,\"lastTimePlayed\":0},\"Tribu de sinvergüenzas\":{\"rating\":2,\"lastTimePlayed\":0},\"UNO\":{\"rating\":5,\"lastTimePlayed\":0},\"Unstable Unicorns\":{\"rating\":5,\"lastTimePlayed\":0},\"Unstable Unicorns Travel Edition\":{\"rating\":5,\"lastTimePlayed\":0},\"Virus\":{\"rating\":3,\"lastTimePlayed\":0},\"What do you meme\":{\"rating\":1,\"lastTimePlayed\":0}}}"
+    ],
+    [
+        "game-indexer-web:owners:Cristian",
+        "{\"name\":\"Cristian\",\"imageUrl\":\"https://th.bing.com/th/id/R.79bc0d62f181b0ee8cf95bf79f4ae0f3?rik=Mz9gdAcS2V5Vag&pid=ImgRaw&r=0\",\"gamesOwned\":[\"Tiro al pato\",\"Love Letter\",\"Casting Shadows\"],\"gamesPlayed\":{}}"
+    ],
+    [
+        "game-indexer-web:owners:David",
+        "{\"name\":\"David\",\"imageUrl\":\"https://media0.giphy.com/media/N8uutOwabFDcmsuPkp/giphy.gif?cid=ecf05e470e1u0fbfk3izax0te0cmk3zg1ynqusnq17jorg4d&ep=v1_gifs_search&rid=giphy.gif&ct=g\",\"gamesOwned\":[\"UNO\",\"Carcassonne\",\"4 en raya\",\"DOS\",\"Unstable Unicorns\",\"Tic Tac K.O.\",\"Happy Little Dinosaurs\",\"Hundir la flota\",\"What do you meme\",\"Ciudadelas\",\"Sushi Go!\",\"Joking Hazard\",\"Bote salvavidas\",\"Poker\",\"Backgammon\",\"Rummikub\",\"Pocket Madness\",\"CATAN\"],\"gamesPlayed\":{\"Carcassonne\":{\"rating\":5,\"lastTimePlayed\":1691185618026},\"DOS\":{\"rating\":4,\"lastTimePlayed\":1691185619090},\"4 en raya\":{\"rating\":5,\"lastTimePlayed\":1691185616616},\"Here to Slay\":{\"rating\":5,\"lastTimePlayed\":1691185619794},\"UNO\":{\"rating\":4,\"lastTimePlayed\":1691185534833},\"Baraja Española\":{\"rating\":1,\"lastTimePlayed\":0},\"Arre Unicornio\":{\"rating\":1,\"lastTimePlayed\":0},\"Dixit\":{\"rating\":4,\"lastTimePlayed\":0},\"Five Alive\":{\"rating\":3,\"lastTimePlayed\":0},\"Happy Little Dinosaurs\":{\"rating\":5,\"lastTimePlayed\":0},\"Jungle Speed\":{\"rating\":1,\"lastTimePlayed\":0},\"Love Letter\":{\"rating\":5,\"lastTimePlayed\":0},\"The Grimwood\":{\"rating\":1,\"lastTimePlayed\":0},\"Tic Tac K.O.\":{\"rating\":5,\"lastTimePlayed\":0},\"Time Bomb\":{\"rating\":4,\"lastTimePlayed\":0},\"Tiro al pato\":{\"rating\":5,\"lastTimePlayed\":0},\"Unstable Unicorns\":{\"rating\":5,\"lastTimePlayed\":0},\"Unstable Unicorns Travel Edition\":{\"rating\":5,\"lastTimePlayed\":0},\"Virus\":{\"rating\":2,\"lastTimePlayed\":0},\"Backgammon\":{\"rating\":4,\"lastTimePlayed\":0},\"Bote salvavidas\":{\"rating\":3,\"lastTimePlayed\":0},\"Ciudadelas\":{\"rating\":5,\"lastTimePlayed\":0},\"Dobble\":{\"rating\":5,\"lastTimePlayed\":0},\"Hundir la flota\":{\"rating\":5,\"lastTimePlayed\":0},\"Joking Hazard\":{\"rating\":4,\"lastTimePlayed\":0},\"Pocket Madness\":{\"rating\":4,\"lastTimePlayed\":0},\"Poker\":{\"rating\":2,\"lastTimePlayed\":0},\"Portal de Molthar\":{\"rating\":5,\"lastTimePlayed\":0},\"Rummikub\":{\"rating\":5,\"lastTimePlayed\":0},\"Sushi Go!\":{\"rating\":5,\"lastTimePlayed\":0},\"Tripulación\":{\"rating\":2,\"lastTimePlayed\":0},\"What do you meme\":{\"rating\":2,\"lastTimePlayed\":0},\"Cortex\":{\"rating\":5,\"lastTimePlayed\":0},\"Cartas contra la humanidad\":{\"rating\":3,\"lastTimePlayed\":0},\"Exploding Kittens\":{\"rating\":5,\"lastTimePlayed\":0},\"Gamers Quizz\":{\"rating\":5,\"lastTimePlayed\":0},\"Monopoly\":{\"rating\":4,\"lastTimePlayed\":0},\"Samurai Sword\":{\"rating\":5,\"lastTimePlayed\":0},\"Tribu de sinvergüenzas\":{\"rating\":2,\"lastTimePlayed\":0},\"Cluedo\":{\"rating\":5,\"lastTimePlayed\":0},\"Código secreto\":{\"rating\":4,\"lastTimePlayed\":0},\"Casting Shadows\":{\"rating\":5,\"lastTimePlayed\":0},\"CATAN\":{\"rating\":5,\"lastTimePlayed\":0},\"Ajedrez\":{\"rating\":5,\"lastTimePlayed\":0},\"Dominó\":{\"rating\":3,\"lastTimePlayed\":0},\"Polilla tramposa\":{\"rating\":1,\"lastTimePlayed\":0}}}"
+    ],
+    [
+        "game-indexer-web:owners:Lucía",
+        "{\"name\":\"Lucía\",\"imageUrl\":\"https://media.tenor.com/p34oU47DQ-8AAAAC/monkey-conduciendo.gif\",\"gamesOwned\":[\"Samurai Sword\",\"Cortex\"],\"gamesPlayed\":{}}"
+    ],
+    [
+        "game-indexer-web:owners:Marcos",
+        "{\"name\":\"Marcos\",\"imageUrl\":\"https://media3.giphy.com/media/9Ai5dIk8xvBm0/200.webp?cid=ecf05e47ut7hwtxufdzbp3g3hfij0w4x1mykx2auuycpl2uo&ep=v1_gifs_search&rid=200.webp&ct=g\",\"gamesOwned\":[\"Portal de Molthar\",\"Sushi Go!\",\"Cartas contra la humanidad\",\"Tribu de sinvergüenzas\",\"DOS\"],\"gamesPlayed\":{\"4 en raya\":{\"rating\":4,\"lastTimePlayed\":1692010077431},\"Arre Unicornio\":{\"rating\":5,\"lastTimePlayed\":0},\"Baraja Española\":{\"rating\":5,\"lastTimePlayed\":0},\"Bote salvavidas\":{\"rating\":4,\"lastTimePlayed\":0},\"Carcassonne\":{\"rating\":5,\"lastTimePlayed\":0},\"Cartas contra la humanidad\":{\"rating\":5,\"lastTimePlayed\":0},\"Ciudadelas\":{\"rating\":5,\"lastTimePlayed\":0},\"Cortex\":{\"rating\":5,\"lastTimePlayed\":0},\"Dixit\":{\"rating\":5,\"lastTimePlayed\":0},\"Dobble\":{\"rating\":5,\"lastTimePlayed\":0},\"DOS\":{\"rating\":4,\"lastTimePlayed\":0},\"Exploding Kittens\":{\"rating\":5,\"lastTimePlayed\":0},\"Five Alive\":{\"rating\":4,\"lastTimePlayed\":0},\"Gamers Quizz\":{\"rating\":3,\"lastTimePlayed\":0},\"Happy Little Dinosaurs\":{\"rating\":5,\"lastTimePlayed\":0},\"Here to Slay\":{\"rating\":4,\"lastTimePlayed\":0},\"Joking Hazard\":{\"rating\":3,\"lastTimePlayed\":0},\"Love Letter\":{\"rating\":5,\"lastTimePlayed\":0},\"Jungle Speed\":{\"rating\":5,\"lastTimePlayed\":0},\"Monopoly\":{\"rating\":4,\"lastTimePlayed\":0},\"Pocket Madness\":{\"rating\":5,\"lastTimePlayed\":0},\"Poker\":{\"rating\":4,\"lastTimePlayed\":0},\"Portal de Molthar\":{\"rating\":5,\"lastTimePlayed\":0},\"Rummikub\":{\"rating\":5,\"lastTimePlayed\":0},\"Samurai Sword\":{\"rating\":5,\"lastTimePlayed\":0},\"Sushi Go!\":{\"rating\":4,\"lastTimePlayed\":0},\"Tic Tac K.O.\":{\"rating\":5,\"lastTimePlayed\":0},\"Time Bomb\":{\"rating\":5,\"lastTimePlayed\":0},\"Tiro al pato\":{\"rating\":5,\"lastTimePlayed\":0},\"Tribu de sinvergüenzas\":{\"rating\":3,\"lastTimePlayed\":0},\"Tripulación\":{\"rating\":5,\"lastTimePlayed\":0},\"UNO\":{\"rating\":5,\"lastTimePlayed\":0},\"Unstable Unicorns\":{\"rating\":5,\"lastTimePlayed\":0},\"Virus\":{\"rating\":5,\"lastTimePlayed\":0},\"What do you meme\":{\"rating\":5,\"lastTimePlayed\":0}}}"
+    ],
+    [
+        "game-indexer-web:owners:Mirian",
+        "{\"name\":\"Mirian\",\"imageUrl\":\"https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif\",\"gamesOwned\":[\"UNO\",\"Unstable Unicorns Travel Edition\",\"DOS\",\"Arre Unicornio\",\"Baraja Española\",\"Five Alive\",\"Time Bomb\",\"The Grimwood\",\"Virus\",\"Jungle Speed\",\"Monopoly\",\"Poker\",\"Tripulación\",\"Dominó\",\"Cluedo\",\"Ajedrez\"],\"gamesPlayed\":{\"4 en raya\":{\"rating\":2,\"lastTimePlayed\":0},\"Arre Unicornio\":{\"rating\":4,\"lastTimePlayed\":0},\"Baraja Española\":{\"rating\":5,\"lastTimePlayed\":0},\"Carcassonne\":{\"rating\":4,\"lastTimePlayed\":0},\"Ciudadelas\":{\"rating\":4,\"lastTimePlayed\":0},\"Cartas contra la humanidad\":{\"rating\":5,\"lastTimePlayed\":0},\"Código secreto\":{\"rating\":4,\"lastTimePlayed\":0},\"Five Alive\":{\"rating\":4,\"lastTimePlayed\":0},\"Exploding Kittens\":{\"rating\":2,\"lastTimePlayed\":0},\"DOS\":{\"rating\":3,\"lastTimePlayed\":0},\"Dobble\":{\"rating\":3,\"lastTimePlayed\":0},\"Here to Slay\":{\"rating\":4,\"lastTimePlayed\":0},\"Hundir la flota\":{\"rating\":3,\"lastTimePlayed\":0},\"Joking Hazard\":{\"rating\":4,\"lastTimePlayed\":0},\"Jungle Speed\":{\"rating\":4,\"lastTimePlayed\":0},\"Monopoly\":{\"rating\":4,\"lastTimePlayed\":0},\"Poker\":{\"rating\":3,\"lastTimePlayed\":0},\"Rummikub\":{\"rating\":5,\"lastTimePlayed\":0},\"Portal de Molthar\":{\"rating\":4,\"lastTimePlayed\":0},\"Samurai Sword\":{\"rating\":4,\"lastTimePlayed\":0},\"Sushi Go!\":{\"rating\":3,\"lastTimePlayed\":0},\"Time Bomb\":{\"rating\":3,\"lastTimePlayed\":0},\"Tiro al pato\":{\"rating\":3,\"lastTimePlayed\":0},\"Tripulación\":{\"rating\":4,\"lastTimePlayed\":0},\"UNO\":{\"rating\":4,\"lastTimePlayed\":0},\"Unstable Unicorns\":{\"rating\":5,\"lastTimePlayed\":0},\"Unstable Unicorns Travel Edition\":{\"rating\":5,\"lastTimePlayed\":0},\"Virus\":{\"rating\":4,\"lastTimePlayed\":0},\"What do you meme\":{\"rating\":4,\"lastTimePlayed\":0},\"Dominó\":{\"rating\":3,\"lastTimePlayed\":0},\"Cluedo\":{\"rating\":4,\"lastTimePlayed\":0},\"Ajedrez\":{\"rating\":3,\"lastTimePlayed\":0}}}"
+    ],
+    [
+        "game-indexer-web:owners:Rita",
+        "{\"name\":\"Rita\",\"imageUrl\":\"https://media3.giphy.com/media/YJ85eVpdZDy7e/200w.webp?cid=ecf05e47ugj56qo73p2f3lwssvf59xrp4rpvn5qvdpok6jk7&ep=v1_gifs_search&rid=200w.webp&ct=g\",\"gamesOwned\":[\"DOS\",\"UNO\"],\"gamesPlayed\":{\"4 en raya\":{\"rating\":3,\"lastTimePlayed\":0},\"Baraja Española\":{\"rating\":5,\"lastTimePlayed\":0},\"Carcassonne\":{\"rating\":5,\"lastTimePlayed\":0},\"Cartas contra la humanidad\":{\"rating\":5,\"lastTimePlayed\":0},\"Ciudadelas\":{\"rating\":3,\"lastTimePlayed\":0},\"Cortex\":{\"rating\":2,\"lastTimePlayed\":0},\"Dixit\":{\"rating\":3,\"lastTimePlayed\":0},\"Dobble\":{\"rating\":4,\"lastTimePlayed\":0},\"DOS\":{\"rating\":5,\"lastTimePlayed\":0},\"Exploding Kittens\":{\"rating\":5,\"lastTimePlayed\":0},\"Five Alive\":{\"rating\":5,\"lastTimePlayed\":0},\"Hundir la flota\":{\"rating\":3,\"lastTimePlayed\":0},\"Joking Hazard\":{\"rating\":4,\"lastTimePlayed\":0},\"Jungle Speed\":{\"rating\":4,\"lastTimePlayed\":0},\"Monopoly\":{\"rating\":3,\"lastTimePlayed\":0},\"Samurai Sword\":{\"rating\":3,\"lastTimePlayed\":0},\"Sushi Go!\":{\"rating\":4,\"lastTimePlayed\":0},\"UNO\":{\"rating\":5,\"lastTimePlayed\":0},\"Tripulación\":{\"rating\":5,\"lastTimePlayed\":0},\"Virus\":{\"rating\":5,\"lastTimePlayed\":0},\"What do you meme\":{\"rating\":4,\"lastTimePlayed\":0}}}"
+    ]
+]
